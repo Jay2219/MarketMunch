@@ -10,6 +10,17 @@ def main():
 
     st.markdown("<h1 style='text-align: center'>🍽️ MarketMunch: Restaurant Market Analyzer 📊</h1>", unsafe_allow_html=True)
 
+    st.markdown("""
+    <style>
+    header.stAppHeader {
+        display: none;
+    }
+    div._profileContainer_gzau3_53 {
+        display: none !important;
+    }            
+    </style>
+    """, unsafe_allow_html=True)
+
     # Use session state to prevent rerun unless user_input changes
     if "last_input" not in st.session_state:
         st.session_state.last_input = ""
